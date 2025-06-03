@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Threshold Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <style>
+      #map { height: 90vh; }
+      #slider { width: 300px; margin: 10px; }
+      #controls { display: flex; align-items: center; gap: 10px; padding: 10px; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="controls">
+      <label for="slider">Threshold: <span id="thresholdValue">--</span></label>
+      <input type="range" id="slider">
+      <button id="saveBtn">Save KMZ</button>
+      <button id="toggleBasemap" style="margin-left: 50%;">Toggle Basemap</button>
+      <button id="toggle-gt">Toggle Ground Truth</button>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
